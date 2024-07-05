@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -23,15 +24,25 @@ npx cap sync
 ### echo(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+echo(options: options) => Promise<options>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+| Param         | Type                                        |
+| ------------- | ------------------------------------------- |
+| **`options`** | <code><a href="#options">options</a></code> |
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;<a href="#options">options</a>&gt;</code>
 
 --------------------
+
+
+### Interfaces
+
+
+#### options
+
+| Prop        | Type                |
+| ----------- | ------------------- |
+| **`value`** | <code>string</code> |
 
 </docgen-api>

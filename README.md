@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`getOrientation()`](#getorientation)
+* [`addListener('orientationChanged', ...)`](#addlistenerorientationchanged-)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -32,6 +34,31 @@ echo(options: options) => Promise<options>
 | **`options`** | <code><a href="#options">options</a></code> |
 
 **Returns:** <code>Promise&lt;<a href="#options">options</a>&gt;</code>
+
+--------------------
+
+
+### getOrientation()
+
+```typescript
+getOrientation() => Promise<{ orientation: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ orientation: string; }&gt;</code>
+
+--------------------
+
+
+### addListener('orientationChanged', ...)
+
+```typescript
+addListener(eventName: 'orientationChanged', listenerFunc: (info: { orientation: string; }) => void) => void
+```
+
+| Param              | Type                                                     |
+| ------------------ | -------------------------------------------------------- |
+| **`eventName`**    | <code>'orientationChanged'</code>                        |
+| **`listenerFunc`** | <code>(info: { orientation: string; }) =&gt; void</code> |
 
 --------------------
 
